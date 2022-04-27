@@ -23,14 +23,13 @@
             }
         },
         created() {
-
+            this.getBannerImgs()
         },
-        mounted() {
+        updated() {
             const mySwiper=new Swiper('.swiper-home',{
                 loop:true,
                 autoplay:true
             })
-            this.getBannerImgs()
         },
         methods:{
             async getBannerImgs(){
